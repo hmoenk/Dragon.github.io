@@ -1006,7 +1006,8 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <!-- <form action=”mailto:hella@moenkeberg.ch” method=”POST” enctype=”text/plain” name=”EmailForm” class="php-email-form"> -->
+            <!-- <form action="forms/contactpinse.php" method="post" role="form" class="php-email-form">              
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
@@ -1028,6 +1029,50 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Absenden</button></div>
+            </form> -->
+            <form action="https://formspree.io/f/xjvzwvjk" method="POST">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="subject" class="form-control" id="subject" placeholder="Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+              </div>
+              <!-- <input type="text" class="form-control" name="telefon" id="telefon" placeholder="Telefon" required>
+            </div> -->
+              <div class="form-group options mt-3">
+                <p class="options-text">Ich nehme Teil an:</p>
+                <input type="checkbox" id="html" value="Turnier">
+                <label class="select-text" for="html">Tichuturnier (13.00 Uhr - 18.00 Uhr)</label><br>
+                <input type="checkbox" id="css" value="Znacht">
+                <label class="select-text" for="css">Znacht (18.00 Uhr - 24.00 Uhr)</label><br>
+              </div>
+              <div class="form-group options mt-3">
+                <p class="options-text">Ich möchte ein Shirt (35.-):</p>
+                <select name="shirt" required>
+                  <option value="xs">XS</option>
+                  <option value="s">S</option>
+                  <option value="m">M</option>
+                  <option value="l">L</option>
+                  <option value="xl">XL</option>
+                </select>
+              </div>
+              <div class="form-group options mt-3">
+                <p class="options-text">Für Znacht</p>
+                <select name="znacht" required>
+                  <option value="carnivale">Carnivaler:in</option>
+                  <option value="vegetarier">Vegetarier:in</option>
+                </select>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Kommentar" required></textarea>
+              </div>
+              <br>
+
+              <!-- your other form fields go here -->
+              <button type="submit" class="btn btn-primary">Send</button>
             </form>
 
           </div>
