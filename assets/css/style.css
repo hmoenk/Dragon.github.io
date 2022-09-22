@@ -549,7 +549,7 @@ section {
 }
 
 .section-title {
-  text-align: center;
+  text-align: left;
   padding-bottom: 30px;
 }
 
@@ -566,6 +566,21 @@ section {
   margin-bottom: 0;
   font-size: 14px;
   color: #919191;
+}
+
+.options {
+  /* font-weight: 600; */
+  display: flex;
+  margin-left: 10px;
+}
+
+.options-text {
+  margin-right: 5px;
+}
+
+.select-text {
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -832,8 +847,10 @@ section {
 
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
+  height: 90px;
   border-radius: 50%;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .testimonials .testimonial-item h3 {
